@@ -24,7 +24,7 @@ public class HelloWorldController {
 		return "process-hello-form";
 	}
 	
-	@RequestMapping("process-form")
+	@RequestMapping("process-formTwo")
 	public String processFormTwo(HttpServletRequest request, Model model) {
 		String name = request.getParameter("studentName");
 		
@@ -34,7 +34,7 @@ public class HelloWorldController {
 		return "process-hello-form";
 	}
 	
-	@RequestMapping("process-form")
+	@RequestMapping("process-form-three")
 	public String processFormThree(@RequestParam("studentName") String name
 			, Model model) {
 		
