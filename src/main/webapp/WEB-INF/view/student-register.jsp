@@ -8,7 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hello Mr. ${student.firstName}  ${student.lastName } 
+Mr. ${student.firstName }  ${student.lastName } <br>
+From ${student.country }<br>
+
+${student.gender}
 
 </body>
 </html>
