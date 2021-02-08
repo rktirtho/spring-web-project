@@ -5,15 +5,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style type="text/css">
+.error{
+color: red;
+}
+</style>
 <title>Insert title here</title>
 </head>
 <body>
 	<h2>Registration Form</h2>
 
-	<form:form action="checkout" modelAttribute="student">
+	<form:form action="validcheck" modelAttribute="student">
 		First Name: <form:input path="firstName" />
+		<form:errors path="firstName" cssClass="error"></form:errors>
 		<br>
 		Last Name: <form:input path="lastName" />
+		
+		<form:errors path="lastName" cssClass="error"></form:errors>
 		<br>
 		Country : <form:select path="country">
 			<form:option value="Bangladesh" label="Bangladesh"></form:option>
@@ -23,7 +31,7 @@
 		</form:select>
 		<br>
 		Gender : <form:radiobutton path="gender" value="Male"/>Male
-		<form:checkbox path="gender" value="female"/> Female<br>
+		<form:checkbox path="gender" value="female"/>
 		<input type="submit" value="Submit">
 	</form:form>
 

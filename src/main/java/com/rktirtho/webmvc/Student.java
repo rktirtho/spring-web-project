@@ -1,8 +1,14 @@
 package com.rktirtho.webmvc;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Student {
-	
+	@NotNull
+	@Size(min = 3, message = "Minumum 3 character")
 	private String firstName;
+	@NotNull
+	@Size(min = 3, message = "Minumum 3 character")
 	private String lastName;
 	private String country;
 	private String gender;
