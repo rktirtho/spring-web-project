@@ -31,7 +31,11 @@ color: red;
 		</form:select>
 		<br>
 		Gender : <form:radiobutton path="gender" value="Male"/>Male
-		<form:checkbox path="gender" value="female"/>
+		<form:checkbox path="gender" value="female"/>Female<br>
+		Tuition Fee <form:input path="tuitionFee"/>
+	
+		<form:errors path="tuitionFee" cssClass="error"></form:errors><br>
+		
 		<input type="submit" value="Submit">
 	</form:form>
 

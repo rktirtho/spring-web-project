@@ -34,6 +34,7 @@ public class RegisterController {
 		if (bindingResult.hasErrors()) {
 			return "register";
 		} else {
+			System.out.println(student.getFirstName());
 			return "student-register";
 		}
 	}
