@@ -36,6 +36,10 @@ color: red;
 	
 		<form:errors path="tuitionFee" cssClass="error"></form:errors><br>
 		
+		Course Code <form:input path="courseCode"/>
+	
+		<form:errors path="courseCode" cssClass="error"></form:errors><br>
+		
 		<input type="submit" value="Submit">
 	</form:form>
 

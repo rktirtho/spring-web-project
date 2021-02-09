@@ -5,6 +5,8 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.rktirtho.webmvc.annotation.CourseCode;
+
 public class Student {
 	@NotNull
 	@Size(min = 3, message = "Minumum 3 character")
@@ -19,6 +21,10 @@ public class Student {
 	@Min(value = 10000, message = "Minimum Tuition 10000")
 	@Max(value = 10000, message = "Minimum Tuition 100000")
 	private Integer tuitionFee;
+	
+	@CourseCode
+	private String courseCode;
+	
 	
 	public Student() {
 	}
@@ -55,6 +61,18 @@ public class Student {
 
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+	
+	
+
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 
 
